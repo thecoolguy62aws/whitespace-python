@@ -1,24 +1,24 @@
 Whitespace
 ==========
 
-.. image:: https://github.com/rzuckerm/whitespace-python/actions/workflows/makefile.yml/badge.svg
-    :target: https://github.com/rzuckerm/whitespace-python/actions/workflows/makefile.yml
+.. image:: https://github.com/thecoolguy62aws/whitespace-python/actions/workflows/makefile.yml/badge.svg
+    :target: https://github.com/thecoolguy62aws/whitespace-python/actions/workflows/makefile.yml
     :alt: Makefile CI
 
-.. image:: https://img.shields.io/pypi/v/whitespace2.svg
-    :target: https://pypi.org/project/whitespace2/
+.. image:: https://img.shields.io/pypi/v/whitespace3.svg
+    :target: https://pypi.org/project/whitespace3/
     :alt: PyPI version
 
-.. image:: https://img.shields.io/pypi/pyversions/whitespace2
-    :target: https://pypi.org/project/whitespace2/
+.. image:: https://img.shields.io/pypi/pyversions/whitespace3
+    :target: https://pypi.org/project/whitespace3/
     :alt: Python versions
 
-.. image:: https://img.shields.io/pypi/wheel/whitespace2
-    :target: https://pypi.org/project/whitespace2/
+.. image:: https://img.shields.io/pypi/wheel/whitespace3
+    :target: https://pypi.org/project/whitespace3/
     :alt: Python wheel
 
 An interpreter written in `Python <https://www.python.org/>`_ for the imperative, stack-based language called `Whitespace`_.
-This is a fork of `<https://github.com/dwayne/whitespace-python>`_.
+This is a fork of `<https://github.com/rzuckerm/whitespace-python>`_.
 
 Installation
 ------------
@@ -27,7 +27,7 @@ To install, simply use pip (or `pipenv`_):
 
 .. code-block:: bash
 
-    $ pip install whitespace2
+    $ pip install whitespace3
 
 Usage
 -----
@@ -38,9 +38,9 @@ Let :code:`program.ws` be any `Whitespace`_ program. To execute it, type:
 
     $ whitespace program.ws
 
-You can find example `Whitespace`_ programs at `tests/fixtures <https://github.com/rzuckerm/whitespace-python/tree/master/test/fixtures>`_.
+You can find example `Whitespace`_ programs at `tests/fixtures <https://github.com/thecoolguy62aws/whitespace-python/tree/master/test/fixtures>`_.
 
-For example, here's the `factorial program <https://github.com/rzuckerm/whitespace-python/tree/master/test/fixtures/fact.ws>`_:
+For example, here's the `factorial program <https://github.com/thecoolguy62aws/whitespace-python/tree/master/test/fixtures/fact.ws>`_:
 
 .. code-block:: bash
 
@@ -60,7 +60,7 @@ Clone the repository and install the dependencies:
 
 .. code-block:: bash
 
-    $ git clone git@github.com:rzuckerm/whitespace-python.git
+    $ git clone git@github.com:thecoolguy62aws/whitespace-python.git
     $ cd whitespace-python
     $ poetry env <python-version>
     $ poetry install
