@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "whitespace2"
+name = "whitespace3"
 packages = [{include="whitespace"}]
 version = "1.0.0"
 description = "An interpreter written in Python for the imperative, stack-backed language called Whitespace"
-authors = ["rzuckerm"]
+authors = ["thecoolguy62aws"]
 license = "LICENSE"
 readme = "README.rst"
-homepage = "https://github.com/rzuckerm/whitespace-python"
+homepage = "https://github.com/thecoolguy62aws/whitespace-python"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: MIT License",
@@ -14,8 +14,8 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/rzuckerm/whitespace-python/issues"
-"Changelog" = "https://github.com/rzuckerm/whitespace-python/blob/master/CHANGELOG.rst"
+"Bug Tracker" = "https://github.com/thecoolguy62aws/whitespace-python/issues"
+"Changelog" = "https://github.com/thecoolguy62aws/whitespace-python/blob/master/CHANGELOG.rst"
 
 [tool.poetry.scripts]
 whitespace = "whitespace.cli:main"
