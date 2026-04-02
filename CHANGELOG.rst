@@ -10,7 +10,7 @@ N/A
 
 **Changed**
 
-Improved input so that instead of waiting for you to press enter, it just waits for you to press any key, then sends it to the program without even echoing it.
+- Improved input so that instead of waiting for you to press enter, it just waits for you to press any key, then sends it to the program without even echoing it.
 
 `1.0.0`_ (2024-10-12)
 +++++++++++++++++++++
