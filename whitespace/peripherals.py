@@ -5,16 +5,32 @@ from .error import IOError
 
 
 class Keyboard:
-    def __init__(self, *, input=sys.stdin):
+    def __init__(self, *, input=None):
         self._input = input
 
     def getc(self):
-        c = self._input.read(1)
+        #c = self._input.read(1)
 
-        if not c:
-            raise IOError("unexpected EOF")
+        try:
+            # Windows
+            import msvcrt
+            return msvcrt.getch().decode('utf-8')
+        except ImportError:
+            # Unix
+            import tty, termios
+            fd = sys.stdin.fileno()
+            old_settings = termios.tcgetattr(fd)
+            try:
+                tty.setcbreak(sys.stdin.fileno())
+                ch = sys.stdin.read(1)
+            finally:
+                termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
-        return c
+        #if not c:
+        #    raise IOError("unexpected EOF")
+
+        #return c
+        return ch
 
     def getn(self):
         s = self._input.readline()
