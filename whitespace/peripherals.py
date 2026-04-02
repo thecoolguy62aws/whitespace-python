@@ -9,15 +9,17 @@ class Keyboard:
         self._input = input
 
     def getc(self):
-        #c = self._input.read(1)
+        # c = self._input.read(1)
 
         try:
             # Windows
             import msvcrt
-            return msvcrt.getch().decode('utf-8')
+
+            return msvcrt.getch().decode("utf-8")
         except ImportError:
             # Unix
             import tty, termios
+
             fd = sys.stdin.fileno()
             old_settings = termios.tcgetattr(fd)
             try:
@@ -26,10 +28,10 @@ class Keyboard:
             finally:
                 termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
-        #if not c:
+        # if not c:
         #    raise IOError("unexpected EOF")
 
-        #return c
+        # return c
         return ch
 
     def getn(self):
